@@ -1,0 +1,16 @@
+body,div,ul,li{margin: 0;padding: 0;}
+body{background: #ccc;}
+.notice{position: relative;height: 80px;}
+.coupon{background: #2ac1bc url(../imgs/1519653782465_b7de12a09711.jpg) center 0 no-repeat;}
+.notice .btn-close{display: block;position: absolute;top: 15px;left: 50%;width: 50px;height: 50px;margin-left: 450px;text-indent: -9999px;}
+.hd-r1{width: 1140px;margin:0 auto;}
+.title a{display: block;width: 194px;height: 68px;background-image: url(../imgs/bmc-logo.png);text-indent: -9999px;}
+.nav-wrap{background-color: #483F35;height: 44px;}
+
+.slide{height: 420px;background-position: center 0;background-repeat: no-repeat;display: none;}
+.slide.on{display: block;}
+.slide1{background-image: url(../imgs/1521778660144_e5f762916b9d.jpg);}
+.slide2{background-image: url(../imgs/1522894188280_540b8e55c765.jpg);}
+.slide3{background-image: url(../imgs/1523508631760_a05d06d3194a.jpg);}
+.slide4{background-image: url(../imgs/1523926426576_e1b6a2dcec2f.jpg);}
+.slide5{background-image: url(../imgs/1523928984388_7e328a43e1b3.jpg);}
