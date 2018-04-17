@@ -6,6 +6,7 @@ body{background: #ccc;}
 .hd-r1{width: 1140px;margin:0 auto;}
 .title a{display: block;width: 194px;height: 68px;background-image: url(../imgs/bmc-logo.png);text-indent: -9999px;}
 .nav-wrap{background-color: #483F35;height: 44px;}
+#mainSlider .slide{display: block;}
 
 .slide{height: 420px;background-position: center 0;background-repeat: no-repeat;display: none;}
 .slide.on{display: block;}
