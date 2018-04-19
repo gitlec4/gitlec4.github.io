@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .park{position: relative;background-color: #ff0;border: 5px solid #f00;width: 600px;height: 450px;}
+        .viking{position: absolute;left: 200px;top: 150px;width: 100px;height: 100px;background-color: cornflowerblue;}
+        .count{font-size: 30px;}
+    </style>
+    <script src="assets/jquery.min.js"></script>
+</head>
+<body>
+    <div class="park">
+        <div class="viking"></div>
+    </div>
+    <div class="count">
+        <div class="park-count">영희가 공원에 들어간 횟수: <span class="c1">0</span></div>
+        <div class="viking-count">영희가 바이킹을 탑승한 횟수: <span class="c2">0</span></div>
+    </div>
+    <script>
+    $(function(){
+        var i=0;
+        var j=0;
+        $('.park').mouseover(function(){
+            i++;
+            $('.c1').text(i);
+            $('.c2').text(j);
+        })
+        $('.viking').mouseover(function(){
+            j++;
+            $('.c1').text(i);
+            $('.c2').text(j);
+        })
+    })
+    </script>
+</body>
+</html>
+
+
+
+

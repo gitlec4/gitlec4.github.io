@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*reset*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;}
+ol,ul {list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+/*common*/
+.clearfix:after{clear: both;display: block;content: '';}
+.ir{display: block;text-indent: -9999px;}
+.inner-ct{width: 1140px;margin:0 auto;}
+/*layout*/
+.wrap{}
+.header{position: fixed;z-index: 30;width: 100%;}
+.container{position: relative;z-index: 20;}
+.footer{}
+/*header 영역*/
+
+
+.header .full-ct{background-color: transparent;height: 60px;}
+.header .full-ct.white{background-color: #fff;}
+.header .logo{float: left;text-indent: 0;margin-right: 30px;}
+.header .gnb{float: left;}
+.header .gnb>li{float: left;}
+.header .gnb>li>a{display: block;height: 60px;line-height: 60px;padding: 0 1em;text-decoration: none;font-weight: bold;color: #fff}
+.header .full-ct.black .gnb>li>a{color: #000;}
+.header .full-ct.white .gnb>li>a{color: #000;}
+/*full-slider*/
+#fullSlider .bg{height: 700px;background-repeat: no-repeat;background-position: center 0;}
+#fullSlider .bg0{background-image: url(../imgs/1652.png);}
+#fullSlider .bg1{background-image: url(../imgs/1657.png);}
+#fullSlider .bg2{background-image: url(../imgs/2928.png);}
+#fullSlider .bg3{background-image: url(../imgs/3189.png);}
+.controls{}
+.controls .ir{position: absolute;top: 330px;width: 40px;height: 40px;background-image: url(../imgs/ico_corp.png);} 
+.controls .btn-prev-full{left: 0;background-position: -155px -110px;}
+.controls .btn-next-full{right: 0;background-position: -205px -110px;}
+.bx-controls-direction{display: none;}
+.full-wrap ..bx-controls-direction .bx-next{}
+
+.count-wrap{position: absolute;bottom: 60px;right: 60px;font-weight: bold;font-size: 30px;}

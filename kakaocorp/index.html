@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>bx 응용</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/bx/jquery.bxslider.min.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/bx/jquery.bxslider.min.js"></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="full-ct">
+        <div class="inner-ct clearfix">
+          <h1 class="logo"><a href="#" class="ir logo">카카오 로고</a></h1>
+          <ul class="gnb clearfix">
+            <li><a href="#">카카오</a></li>
+            <li><a href="#">투자정보</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">소셜임팩트</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">인재영입</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="full-wrap">
+        <ul id="fullSlider">
+          <li class="bg bg0"></li>
+          <li class="bg bg1"></li>
+          <li class="bg bg2"></li>
+          <li class="bg bg3"></li>
+        </ul>
+        <div class="controls"><a href="#" class="ir btn-prev-full">이전</a><a href="#" class="ir btn-next-full">다음</a></div>
+        <div class="count-wrap"><span class="count">1</span>/4</div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </div>
+  <script>
+  $(function(){
+    var slider=$('#fullSlider').bxSlider({
+      //auto:true,
+      //controls:false,
+      mode:'fade',
+      onSlideBefore:function(){
+        var current = slider.getCurrentSlide();
+        if(current==1 || current==3){
+          $('.header .full-ct').addClass('black');
+        }else{
+          $('.header .full-ct').removeClass('black');
+        }
+        c1=current+1;
+        $('.count').text(c1);
+      }
+    });
+  $p=$('.full-wrap .bx-controls-direction .bx-prev');
+  $n=$('.full-wrap .bx-controls-direction .bx-next');
+ $('.btn-prev-full').on('click',function(){$p.trigger('click');}); $('.btn-next-full').on('click',function(){$n.trigger('click');});
+    /*
+    $('a.btn-next-full').click(function () {
+      var current = slider.getCurrentSlide();
+      slider.goToNextSlide(current) + 1;
+    });
+    */
+ $('.header .full-ct').on({mouseenter:function(){$(this).addClass('white');},mouseleave:function(){$(this).removeClass('white');}});
+  });
+  </script>
+</body>
+</html>

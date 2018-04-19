@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img{width: 200px;}
+        .lion{position: relative;left: 0;top: 0;}
+    </style>
+    <script src="assets/jquery.min.js"></script>
+</head>
+<body>
+    <div class="lion"><img src="imgs/lion.gif" alt=""></div>
+    <div class="tube"><img src="imgs/tube.png" alt=""></div>
+    <script>
+    $(function(){
+        $('.lion').click(function(){
+            $(this).animate({left:800},1500)
+        });
+        $('.tube').click(function(){
+          $('.lion').trigger('click');
+            //$('.lion').click();
+        });
+    })
+    </script>
+</body>
+</html>
