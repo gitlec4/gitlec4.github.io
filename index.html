@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>FE 보강</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var myuri="http://gitlec4.github.io"
+if(document.referrer.substring(0,myuri.length)!=myuri){
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia', 'Opera mini', 'Webos', 'Mot', 'Opera Mobi', 'ieMobile', 'LG');
+    for (var word in mobileKeyWords){
+        if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+            location.href = "/m";
+            break;
+        }
+    }
+}
+</script>
+
 </head>
 <body>
-    <div class="wrap">
-        <header>
-            <div class="inner-container"><h1>gitlec4.github.io</h1></div>
-        </header>
-        <section>
-            <div class="inner-container"></div>
-        </section>
-    </div>
+	<h1>PC 버전 사이트</h1>
+	<script>
+
+	</script>
 </body>
 </html>
