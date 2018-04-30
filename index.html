@@ -1,12 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script>
-		var myuri="http://gitlec4.github.io"
-if(document.referrer.substring(0,myuri.length)!=myuri){
-    var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia', 'Opera mini', 'Webos', 'Mot', 'Opera Mobi', 'ieMobile', 'LG');
+	<meta charset="utf-8">
+	<title> 모바일 리다이렉트 </title>
+<script type="text/javascript">
+var url="http://gitlec4.github.io"
+//도메인만 바꾸고 모바일 페이지는 아래 코드 중  location.href = "/m" 을 변경;
+if(document.referrer.substring(0,url.length)!=url){
+    var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
     for (var word in mobileKeyWords){
         if (navigator.userAgent.match(mobileKeyWords[word]) != null){
             location.href = "/m";
@@ -15,12 +16,11 @@ if(document.referrer.substring(0,myuri.length)!=myuri){
     }
 }
 </script>
+ </head>
 
-</head>
-<body>
-	<h1>PC 버전 사이트</h1>
-	<script>
-
-	</script>
-</body>
+ <body>
+ <div>
+	<h1>PC 버전 콘텐츠</h1>
+ </div>
+ </body>
 </html>
